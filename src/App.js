@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import * as ROUTES from './constants/routes';
 const Login = lazy(() => import('./pages/login'));
 const SignUp = lazy(() => import('./pages/signup'));
+const NotFound = lazy(() => import('./pages/not-found'));
 
 export const App = () => {
   return (
@@ -13,9 +14,9 @@ export const App = () => {
         <Suspense fallback={<p> Loading............. </p>}>
 
         <Switch>
-          hello
-          <Route path={ROUTES.LOGIN} component={Login} />
-          <Route path={ROUTES.SIGN_UP} component={SignUp} />
+          <Route path={ROUTES.LOGIN} component={Login} exact />
+          <Route path={ROUTES.SIGN_UP} component={SignUp}  exact/>
+          <Route component={NotFound}  />
          </Switch>
         </Suspense>
       </Router>
