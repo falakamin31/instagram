@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Sidebar = () => {
+const suggestions = () => {
     return (
         <div>
-            <p>I am Sidebar</p>
+        <p>i am suggestions</p>
             
         </div>
     )
 }
 
-export default Sidebar
+export default suggestions

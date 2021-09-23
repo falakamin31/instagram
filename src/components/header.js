@@ -67,7 +67,7 @@ const Header = () => {
                   <Link to={`/p/${user.displayName}`}>
                     <img
                       className="rounded-full h-6 w-6 flex"
-                      src={`/images/avatars/${user.displayName}.jpg`}
+                      src={`/images/avatars/${user.displayName}.png`}
                       alt={`${user.displayName} profile`}
                     />
                   </Link>
